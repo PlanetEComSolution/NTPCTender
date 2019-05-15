@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+
+
+    android:orientation="vertical">
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+
+        <android.support.design.widget.TextInputLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/reg_fullname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:hint="Name"
+                android:padding="@dimen/et_padding"
+                android:textSize="@dimen/login_textsize"
+                android:singleLine="true"
+                android:textColor="@android:color/white"
+                android:textCursorDrawable="@null" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/tv_inputlayouTopMargin"
+
+            >
+
+            <EditText
+                android:id="@+id/reg_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:hint="E-mail"
+                android:textSize="@dimen/login_textsize"
+                android:maxLines="1"
+
+                android:padding="@dimen/et_padding"
+
+                android:textColor="@android:color/white" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/tv_inputlayouTopMargin"
+
+            >
+
+
+            <EditText
+                android:id="@+id/et_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:hint="Phone"
+                android:textSize="@dimen/login_textsize"
+                android:inputType="number"
+                android:maxLength="10"
+                android:maxLines="1"
+                android:padding="@dimen/et_padding"
+
+                android:textColor="@android:color/white" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/btn_Register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/login_marginTop"
+            android:background="@color/colorPrimaryDark_2"
+            android:text="Register"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white"
+            android:textSize="17sp"
+
+            />
+
+
+    </LinearLayout>
+
+</LinearLayout>
+
+

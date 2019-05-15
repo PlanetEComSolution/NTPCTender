@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+
+
+    android:orientation="vertical">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+       <!-- <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorPrimaryDark_2"
+            android:gravity="center"
+            android:text="NTPC Powering India's Growth"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />-->
+        <ImageView
+
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+           android:src="@color/colorPrimaryDark_2"
+
+             />
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+
+        <ImageView
+
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/ic_launcher"
+
+            />
+
+
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/layout_RequestDate"
+                android:layout_width="match_parent"
+                android:layout_marginTop="30dp"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/reg_fullname"
+                    android:layout_width="match_parent"
+                    android:layout_height="39dp"
+                    android:hint="User ID"
+                    android:padding="@dimen/et_padding"
+android:textSize="@dimen/login_textsize"
+                    android:singleLine="true"
+                    android:textColor="#000000"
+                    android:textCursorDrawable="@null" />
+            </android.support.design.widget.TextInputLayout>
+
+
+
+
+
+
+            <android.support.design.widget.TextInputLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/tv_inputlayouTopMargin"
+                >
+
+
+                <EditText
+                    android:id="@+id/reg_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:textSize="@dimen/login_textsize"
+                    android:padding="@dimen/et_padding"
+
+                    android:textColor="#000000"
+                    android:textCursorDrawable="@null" />
+            </android.support.design.widget.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/login_marginTop"
+            android:background="@color/colorPrimaryDark_2"
+            android:text="Login"
+            android:textSize="17sp"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white"
+
+
+            />
+        <!--   android:textColor="@color/text_color_login"
+          android:background="@drawable/login_btn_shape"
+        -->
+
+        <TextView
+            android:id="@+id/tv_forgotPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/login_marginTop"
+            android:text="Forgot Password?"
+
+            android:textSize="@dimen/login_textsize"
+            android:textStyle="normal" />
+        <!--  android:textColor="@color/text_color_login"-->
+        <TextView
+            android:id="@+id/tv_NewUser"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="New User? Register Here"
+
+            android:textSize="@dimen/login_textsize"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/tv_NewUser_test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="New User? Register Here"
+            android:textColor="@color/text_color_login"
+            android:textSize="@dimen/login_textsize"
+            android:textStyle="normal"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>
+
+
